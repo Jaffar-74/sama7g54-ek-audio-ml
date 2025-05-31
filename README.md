@@ -6,6 +6,12 @@ This project demonstrates such an audio ML application in the context of machine
 
 ![Set-up](docs/pics/Hardware%20Setup%20SAMA7G54.png)
 
+# Reference Documentation
+
+- _[SAMA7G54-EK User's Guide](https://www.microchip.com/DS50003273)_
+- _[Getting Started with the SAMA7G54-EK Audio System under Linux™](https://www.microchip.com/90003372)_
+- _[Getting started with Edge Impulse](https://docs.edgeimpulse.com/docs)_
+
 # Hardware Prerequisites
 
 - [SAMA7G54 Evaluation Kit](https://www.microchip.com/en-us/development-tool/ev21h18a)
@@ -20,6 +26,18 @@ This project demonstrates such an audio ML application in the context of machine
 - [Edge Impulse](https://edgeimpulse.com/)
 - [Docker](https://www.docker.com/)
 - [Node.js](https://nodejs.org/en)
+
+# SAMA7G54 Evaluation Kit Overview
+
+The SAMA7G54 Evaluation Kit [EV21H18A](https://www.microchip.com/en-us/development-tool/ev21h18a) provides a versatile Total System Solution platform that
+highlights Microchip MPU and connectivity ICs.
+The board features on-board memories, two Ethernet interfaces, three USB ports, two CAN
+interfaces, one SD card connector, two mikroBUS™ click interface headers to support over 450
+MikroElektronika Click boards™, an RPi CSI camera to support a camera module, an RPi extension
+connector to support several extension boards, and provision to solder a Microchip ATWILC3000-
+MR110xA Wi-Fi/Bluetooth module.
+
+**Note:** RPi stands for “Raspberry Pi”. Raspberry Pi is a trademark of Raspberry Pi Trading.
 
 # Enhancing Predictive Maintenance with Audio Signal Processing and AI/ML
 
