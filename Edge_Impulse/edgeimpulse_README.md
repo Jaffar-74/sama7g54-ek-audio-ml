@@ -21,7 +21,6 @@ With support for audio, vision, and sensor data, Edge Impulse empowers developer
 ### 2️⃣ Data Collection for Model Training
 
 1. The model requires a dataset for training, which can be sourced through various methods such as recordings, live capture, or online datasets. In this project, the dataset is sourced from the [Kaggle](https://www.kaggle.com/) platform.<br>
-
    <br>
    **About the Dataset📌:** The **IDMT-ISA-ELECTRIC-ENGINE** dataset contains audio files from three similar units of an electrical engine (2ACT Motor Brushless DC 42BLF01, 4000 RPM, 24VDC). These recordings simulate different acoustic conditions:
 
@@ -31,3 +30,17 @@ With support for audio, vision, and sensor data, Edge Impulse empowers developer
 - **Resolution:** 32-bit
 - **Audio Type:** Mono
 - **States:** Good, Heavy Load, Broken
+
+2. Go to the **Data Acquisition** tab in the Edge Impulse project dashboard. This tab provides multiple options for data collection, including:
+   - Capturing data from target hardware
+   - Capturing data using a mobile phone
+   - Uploading files in various formats
+3. For this project, the `.wav` files will be uploaded directly from the PC. Follow these steps: <br>
+   3.1 Click the **Upload** button in the **Data Acquisition** tab.  
+   3.2 Select upload mode as individual files.  
+   3.3 Select the files from the system. <br>
+   3.4 In the **Upload into Category** field, select whether the data will be used for training or testing. If **Automatic split** is selected, the platform will handle the train/test split automatically. <br>
+   3.5 Label the dataset based on the uploaded data. <br>
+   3.6 Click **Upload** to upload the data. <br>
+
+<img src="docs/pics/upload_data.png" alt="Data Upload" width="500" />
