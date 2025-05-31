@@ -18,4 +18,16 @@ With support for audio, vision, and sensor data, Edge Impulse empowers developer
 6. Click the **Save** button to save the configuration.<br>
    <img src="docs/pics/Target_Config.png" alt="Target_Configuration" width="400" />
 
-### 2️⃣
+### 2️⃣ Data Collection for Model Training
+
+1. The model requires a dataset for training, which can be sourced through various methods such as recordings, live capture, or online datasets. In this project, the dataset is sourced from the [Kaggle](https://www.kaggle.com/) platform.<br>
+
+   <br>
+   **About the Dataset📌:** The **IDMT-ISA-ELECTRIC-ENGINE** dataset contains audio files from three similar units of an electrical engine (2ACT Motor Brushless DC 42BLF01, 4000 RPM, 24VDC). These recordings simulate different acoustic conditions:
+
+**Dataset Specifications:**
+
+- **Sampling Rate:** 44.1 kHz
+- **Resolution:** 32-bit
+- **Audio Type:** Mono
+- **States:** Good, Heavy Load, Broken
