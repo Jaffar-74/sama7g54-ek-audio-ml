@@ -27,7 +27,7 @@ With support for audio, vision, and sensor data, Edge Impulse empowers developer
    - **Sampling Rate:** 44.1 kHz
    - **Resolution:** 32-bit
    - **Audio Type:** Mono
-   - **States:** Good, Heavy Load, Broken
+   - **States:** Good, Heavy Load, Broken <br>
 2. Go to the **Data Acquisition** tab in the Edge Impulse project dashboard. This tab provides multiple options for data collection, including:
    - Capturing data from target hardware
    - Capturing data using a mobile phone
@@ -46,4 +46,13 @@ With support for audio, vision, and sensor data, Edge Impulse empowers developer
 1. In the **Experiments** tab, click **Create new impulse**.
 2. Click **Add a processing block**. In this project, the **Mel Filterbank Energy (MFE)** processing block is used.
 3. Click **Add a learning block**. In this project, the **Classification** learning block (CNN-based model) is used.
-   > **📝Note:** <br>1.The platform automatically configures these blocks based on the uploaded dataset. <br>2. Users can also add custom processing and learning blocks to the impulse design. <br>3.Ensure the model is designed according to the specific application needs.
+   > **📝Note:** <br>1. The platform automatically configures these blocks based on the uploaded dataset. <br>2. Users can also add custom processing and learning blocks to the impulse design. <br>3. Ensure the model is designed according to the specific application needs. <br>
+
+<img src="docs/pics/impulse.png" alt="Impulse" width="800" />
+#### Working
+
+- **Time Series Data**: This step splits the input into specific window sizes, which are fed to the processing block.
+
+- **Processing Block**: This block extracts meaningful features from the data to build a small and reliable machine learning model.
+
+- **Learning Block**: After feature extraction using the processing block, the model is trained using the learning block.
