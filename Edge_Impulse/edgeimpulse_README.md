@@ -18,19 +18,16 @@ With support for audio, vision, and sensor data, Edge Impulse empowers developer
 6. Click the **Save** button to save the configuration.<br>
    <img src="docs/pics/Target_Config.png" alt="Target_Configuration" width="400" />
 
-### 2️⃣ Data Collection for Model Training
+### 2️⃣ Data Collection and Uploading for Model Training
 
 1. The model requires a dataset for training, which can be sourced through various methods such as recordings, live capture, or online datasets. In this project, the dataset is sourced from the [Kaggle](https://www.kaggle.com/) platform.<br>
    <br>
-   **About the Dataset📌:** The **IDMT-ISA-ELECTRIC-ENGINE** dataset contains audio files from three similar units of an electrical engine (2ACT Motor Brushless DC 42BLF01, 4000 RPM, 24VDC). These recordings simulate different acoustic conditions:
-
-**Dataset Specifications:**
-
-- **Sampling Rate:** 44.1 kHz
-- **Resolution:** 32-bit
-- **Audio Type:** Mono
-- **States:** Good, Heavy Load, Broken
-
+   **📌About the Dataset:** The **IDMT-ISA-ELECTRIC-ENGINE** dataset contains audio files from three similar units of an electrical engine (2ACT Motor Brushless DC 42BLF01, 4000 RPM, 24VDC). These recordings simulate different acoustic conditions: <br>
+   **Dataset Specifications:**
+   - **Sampling Rate:** 44.1 kHz
+   - **Resolution:** 32-bit
+   - **Audio Type:** Mono
+   - **States:** Good, Heavy Load, Broken
 2. Go to the **Data Acquisition** tab in the Edge Impulse project dashboard. This tab provides multiple options for data collection, including:
    - Capturing data from target hardware
    - Capturing data using a mobile phone
@@ -42,5 +39,11 @@ With support for audio, vision, and sensor data, Edge Impulse empowers developer
    3.4 In the **Upload into Category** field, select whether the data will be used for training or testing. If **Automatic split** is selected, the platform will handle the train/test split automatically. <br>
    3.5 Label the dataset based on the uploaded data. <br>
    3.6 Click **Upload** to upload the data. <br>
+   <img src="docs/pics/upload_data.png" alt="Data Upload" width="500" />
 
-<img src="docs/pics/upload_data.png" alt="Data Upload" width="500" />
+### 3️⃣ Creating Impulse
+
+1. In the **Experiments** tab, click **Create new impulse**.
+2. Click **Add a processing block**. In this project, the **Mel Filterbank Energy (MFE)** processing block is used.
+3. Click **Add a learning block**. In this project, the **Classification** learning block (CNN-based model) is used.
+   > **📝Note:** <br>1.The platform automatically configures these blocks based on the uploaded dataset. <br>2. Users can also add custom processing and learning blocks to the impulse design. <br>3.Ensure the model is designed according to the specific application needs.

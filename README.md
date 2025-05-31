@@ -37,7 +37,7 @@ MikroElektronika Click boards™, an RPi CSI camera to support a camera module, 
 connector to support several extension boards, and provision to solder a Microchip ATWILC3000-
 MR110xA Wi-Fi/Bluetooth module.
 
-**Note:📝** RPi stands for “Raspberry Pi”. Raspberry Pi is a trademark of Raspberry Pi Trading.
+> **📝Note:** RPi stands for “Raspberry Pi”. Raspberry Pi is a trademark of Raspberry Pi Trading.
 
 # Enhancing Predictive Maintenance with Audio Signal Processing and AI/ML
 
