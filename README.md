@@ -1,2 +1,4 @@
 # sama7g54-ek-audio-ml
-Predictive maintenance using audio-based fault detection in motor systems. This project uses Edge Impulse for model development and deploys real-time classification on the SAMA7G54 Evaluation Kit, combining AI with audio signal processing for advanced audio applications.
+The primary goal of this project is to develop a real-time monitoring system that continuously assesses the operational health of a machine using audio data. By leveraging Mel-filter bank Energy (MFE) features, the system extracts critical frequency characteristics that correlate with various machine states. These features are then used to train a neural network capable of accurately classifying the machine’s condition into categories such as "good," "broken fault," and "heavy load motor."
+
+To streamline development, the Edge Impulse platform is utilized for data collection, feature extraction, model training, and deployment. The final model is deployed on an embedded Linux device—the SAMA7G54 Evaluation Kit—demonstrating robust, real-time classification with high accuracy.
