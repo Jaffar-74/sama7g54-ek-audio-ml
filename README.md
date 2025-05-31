@@ -6,6 +6,21 @@ This project demonstrates such an audio ML application in the context of machine
 
 ![Set-up](docs/pics/Hardware%20Setup%20SAMA7G54.png)
 
+# Hardware Prerequisites
+
+- [SAMA7G54 Evaluation Kit](https://www.microchip.com/en-us/development-tool/ev21h18a)
+- Linux PC
+- FTDI Cable
+- Ethernet Cable
+- USB Type-B Cable
+- SD Card
+
+# Software Prerequisites
+
+- [Edge Impulse](https://edgeimpulse.com/)
+- [Docker](https://www.docker.com/)
+- [Node.js](https://nodejs.org/en)
+
 # Enhancing Predictive Maintenance with Audio Signal Processing and AI/ML
 
 Traditional PdM methods such as vibration sensors, current probes, and temperature monitoring are often intrusive, expensive, and may miss subtle faults that don’t significantly impact power consumption or create noticeable vibrations. In demanding environments like factories and automotive systems, this can result in major failures and production stoppages. To address these limitations, this project demonstrates the audio signal processing with AI/ML techniques to integrate into traditional PdM systems, creating a more robust monitoring solution. MEMS microphones non-intrusive and cost-effective are used for continuous audio monitoring, capturing early mechanical anomalies that other sensors often miss.
