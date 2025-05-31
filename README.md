@@ -10,7 +10,7 @@ This project demonstrates such an audio ML application in the context of machine
 
 - _[SAMA7G54-EK User's Guide](https://www.microchip.com/DS50003273)_
 - _[Getting Started with the SAMA7G54-EK Audio System under Linux™](https://www.microchip.com/90003372)_
-- _[Getting started with Edge Impulse](https://docs.edgeimpulse.com/docs)_
+- _[Edge Impulse](https://docs.edgeimpulse.com/docs)_
 
 # Hardware Prerequisites
 
@@ -42,3 +42,8 @@ MR110xA Wi-Fi/Bluetooth module.
 # Enhancing Predictive Maintenance with Audio Signal Processing and AI/ML
 
 Traditional PdM methods such as vibration sensors, current probes, and temperature monitoring are often intrusive, expensive, and may miss subtle faults that don’t significantly impact power consumption or create noticeable vibrations. In demanding environments like factories and automotive systems, this can result in major failures and production stoppages. To address these limitations, this project demonstrates the audio signal processing with AI/ML techniques to integrate into traditional PdM systems, creating a more robust monitoring solution. MEMS microphones non-intrusive and cost-effective are used for continuous audio monitoring, capturing early mechanical anomalies that other sensors often miss.
+
+# Development Process
+
+- [Starting Development with Edge Impulse](Edge_Impulse/edgeimpulse_README.md)
+- [Building Edge Impulse C++ Library Applications on Linux]()
