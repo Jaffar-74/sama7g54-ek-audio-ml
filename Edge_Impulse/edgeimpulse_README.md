@@ -15,7 +15,7 @@ With support for audio, vision, and sensor data, Edge Impulse empowers developer
 3. Enter a project name and select either **Public** or **Private** for the project visibility. Click **Create new project** to complete the setup.
 4. In the **Dashboard** menu, click the button in the top-right corner to add a target device. <br>![Target_Device](docs/pics/Target_Sel.jpg)
 5. In the **Target device** drop-down menu, select **Microchip SAMA7G54 Evaluation Kit**.
-   ![Target_Configuration](docs/pics/Target_Config.png)
-6. Click the **Save** button to save the configuration.
+6. Click the **Save** button to save the configuration.<br>
+   <img src="docs/pics/Target_Config.png" alt="Target_Configuration" width="400" />
 
 ### 2️⃣
