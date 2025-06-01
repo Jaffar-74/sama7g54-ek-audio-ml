@@ -16,6 +16,7 @@ With support for audio, vision, and sensor data, Edge Impulse empowers developer
 4. In the **Dashboard** menu, click the button in the top-right corner to add a target device. <br>![Target_Device](docs/pics/Target_Sel.jpg)
 5. In the **Target device** drop-down menu, select **Microchip SAMA7G54 Evaluation Kit**.
 6. Click the **Save** button to save the configuration.<br>
+
    <img src="docs/pics/Target_Config.png" alt="Target_Configuration" width="400" />
 
 ### 2️⃣ Data Collection and Uploading for Model Training
@@ -39,6 +40,7 @@ With support for audio, vision, and sensor data, Edge Impulse empowers developer
    3.4 In the **Upload into Category** field, select whether the data will be used for training or testing. If **Automatic split** is selected, the platform will handle the train/test split automatically. <br>
    3.5 Label the dataset based on the uploaded data. <br>
    3.6 Click **Upload** to upload the data. <br>
+
    <img src="docs/pics/upload_data.png" alt="Data Upload" width="500" />
 
 ### 3️⃣ Creating Impulse
@@ -49,6 +51,7 @@ With support for audio, vision, and sensor data, Edge Impulse empowers developer
    > **📝Note:** <br>1. The platform automatically configures these blocks based on the uploaded dataset. <br>2. Users can also add custom processing and learning blocks to the impulse design. <br>3. Ensure the model is designed according to the specific application needs. <br>
 
 <img src="docs/pics/impulse.png" alt="Impulse" width="800" />
+
 #### Working
 
 - **Time Series Data**: This step splits the input into specific window sizes, which are fed to the processing block.
@@ -56,3 +59,25 @@ With support for audio, vision, and sensor data, Edge Impulse empowers developer
 - **Processing Block**: This block extracts meaningful features from the data to build a small and reliable machine learning model.
 
 - **Learning Block**: After feature extraction using the processing block, the model is trained using the learning block.
+
+### 4️⃣ Configuring the DSP Block
+
+<img src="docs/pics/MFE_param.png" alt="MFE Parameters" width="400" /> <br>
+
+1. Configure the DSP block in the **MFE** tab by specifying the following parameters:
+   | Parameter | Definition |
+   |------------------|-----------------------------------------------------------------------------------------|
+   | **Frame length** | Length of each frame in seconds. |
+   | **Frame stride** | Step between successive frames in seconds. |
+   | **Filter number**| Number of triangular filters applied to the spectrogram. |
+   | **FFT length** | Size of the FFT. |
+   | **Low frequency**| Lowest band edge of the Mel-scale filterbanks. |
+   | **High frequency**| Highest band edge of the Mel-scale filterbanks. |
+   | **Noise floor (dB)**| Signals lower than this level are dropped. |
+2. Otherwise, select the **Autotune parameters** option to allow the platform to automatically configure the settings based on the application.
+3. Click on the **Generate Features** field in the **MFE** Tab to process the input provided to the DSP block and generate the features. <br>
+   <img src="docs/pics/feature_exp.png" alt="Feature Explorer" width="400" /> <br>
+4. The **Feature Explorer** graphically represents how the data is distributed. The Feature Explorer provides several benefits, including:
+   - Clear visualization of data distribution.
+   - Easy identification of outliers.
+   - Better understanding of feature importance.
